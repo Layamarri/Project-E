@@ -1,0 +1,855 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* header  section*/
+.header {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 80px;
+}
+
+.header img {
+    height: 150px;
+    width: 200px;
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 8%;
+    padding-left: 10px;
+
+}
+
+ul>li a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+
+}
+
+ul>li a:hover {
+    color: rgb(23, 101, 96);
+}
+
+#searchbar {
+    height: 40px;
+    width: 300px;
+    position: relative;
+}
+
+#searchbar_icon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10%;
+    right: 9%;
+    
+}
+
+#icon-heart {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    gap: 3%;
+}
+
+#icon-cart {
+    height: 20px;
+    width: 20px;
+}
+
+/* header section */
+
+/* Hero section */
+.hero {
+    padding: 20px 80px;
+    margin-top: 20px;
+}
+
+#home-img {
+    float: right;
+}
+
+.hero h1 span {
+    color: rgb(23, 101, 96);
+    font-size: 80px;
+}
+
+.hero button {
+    background-color: rgb(23, 101, 96);
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    border: 1px solid rgb(23, 101, 96);
+}
+
+.hero button:hover {
+    background-color: white;
+    color: rgb(23, 101, 96);
+    border: 1px solid rgb(23, 101, 96);
+}
+
+/* hero section ends */
+/*  */
+.para {
+    margin: 80px 80px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.para span {
+    color: rgb(23, 101, 96);
+}
+
+.categories {
+    display: flex;
+    margin-left: 55px;
+    margin-right: 40px;
+    justify-content: space-around;
+}
+
+.product {
+    height: 220px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.categories img {
+    height: 160px;
+    width: 180px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.product p {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 75px;
+    padding-top: 40px;
+    gap: 5px;
+}
+
+.buttons button {
+    height: 40px;
+    width: 100px;
+    border: 1px solid white;
+}
+
+.buttons button:hover {
+    background-color: bisque;
+    color: rgb(49, 142, 136)
+}
+/* Featured 1*/
+.featured{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 40px;
+}
+.product-1 {
+    height: 470px;
+    width: 320px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    padding:6px;
+}
+.shirt1{
+    background-image: url(./assets/img/product-1-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .shirt1{
+    background-image: url(./assets/img/product-1-2.jpg);
+    transition: all 2s linear;
+
+}
+.shirt2{
+    background-image: url(./assets/img/product-2-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .shirt2{
+    background-image: url(./assets/img/product-2-2.jpg);
+    transition: all 2s linear;
+
+}
+
+.shoe{
+    background-image: url(./assets/img/product-3-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .shoe{
+    background-image: url(./assets/img/product-3-2.jpg);
+    transition: all 2s linear;
+
+}
+.pants{
+    background-image: url(./assets/img/product-4-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .pants{
+    background-image: url(./assets/img/product-4-2.jpg);
+    transition: all 2s linear;
+  
+}
+.price p {
+    color: rgb(23, 113, 113);
+}
+
+.price p strike {
+    color: gray;
+    font-size: small;
+}
+
+.cart-img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(230, 228, 221);
+    line-height: 30px;
+    position: relative;
+    left: 270px;
+    bottom: 60px;
+    padding: 10px;
+
+}
+.btn {
+    background-color:rgb(170, 197, 170);
+    color: azure;
+    border: 1px solid white;
+
+    border-radius: 5px;
+}
+.f-images{
+    position:absolute;
+    top:120px;
+    left: 120px;
+    opacity: 0;
+}
+.f-images:hover{
+    opacity: 1;
+}
+.f-images i{
+    background-color:rgb(185, 195, 194);
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+/* featured ends here */
+/* ...features2.... */
+.featured2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 40px;
+}
+.cap{
+    background-image: url(./assets/img/product-5-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .cap{
+    background-image: url(./assets/img/product-5-2.jpg);
+    transition: all 2s linear;
+
+}
+.shirt3{
+    background-image: url(./assets/img/product-6-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .shirt3{
+    background-image: url(./assets/img/product-6-2.jpg);
+    transition: all 2s linear;
+
+}
+
+.female-shirt{
+    background-image: url(./assets/img/product-7-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .female-shirt{
+    background-image: url(./assets/img/product-7-2.jpg);
+    transition: all 2s linear;
+
+}
+.shirt4{
+    background-image: url(./assets/img/product-8-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .shirt4{
+    background-image: url(./assets/img/product-8-2.jpg);
+    transition: all 2s linear;
+}
+
+
+/*....banner section..... */
+.banner {
+    display: flex;
+}
+
+.banner1 {
+    height: 470px;
+    width: 690px;
+    background-image: url(./assets/img/deals-1.jpg);
+    background-size: cover;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.details {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.details h4 {
+    font-size: xx-large;
+    color: rgb(23, 101, 96);
+}
+
+.details .p1 {
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.details .p2 {
+    color: rgb(218, 90, 26);
+}
+
+.details strike {
+    color: gray;
+
+}
+
+.banner2 {
+    height: 470px;
+    width: 690px;
+    background-image: url(./assets/img/deals-2.png);
+    background-size: cover;
+    margin-left:30px;
+    margin-top: 30px;
+}
+.time{
+    display: flex;
+    gap: 3%;
+    
+}
+
+.time li{
+    list-style: none;
+    border: 1px solid rgb(23, 101, 96);
+    height: 30px;
+    width: 30px;
+    background-color: rgb(23, 101, 96);
+    color: white;
+    padding-top:3px;
+    text-align: center;
+    border-radius: 3px;
+    
+}
+.Days{
+    list-style:none;
+    display: flex;
+    gap: 6%;
+}
+
+.bt {
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid rgb(23, 101, 96);
+    color: rgb(23, 101, 96);
+    background-color: rgb(164, 203, 201);
+    border-radius: 2px;
+}
+
+/* banner section ends */
+h3 {
+    margin-top: 63px;
+    margin-left: 62px;
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+h3 span {
+    color: rgb(23, 101, 96);
+}
+
+.btn {
+    background-color: bisque;
+    color: azure;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+}
+
+
+.Hot-Releases hr {
+    height: 1px;
+    border-width: 5px;
+    color: rgb(23, 101, 96);
+
+
+}
+
+.showcase-img {
+    display: flex;
+}
+
+.showcase-img p {
+    display: flex;
+}
+
+.showcase-img img {
+    border: 1px solid black;
+    border: none;
+    margin: 20px 0;
+    height: 80px;
+    width: 80px;
+}
+
+.context {
+    padding-left: 8px;
+    align-content: normal;
+}
+
+.context p span {
+    color: rgb(23, 101, 96);
+}
+
+.context p strike {
+    color: gray;
+
+}
+
+.column1 {
+    border: 1px solid black;
+    border: none;
+    margin: 0 15px;
+}
+
+.column {
+    display: flex;
+    margin: 35px 40px;
+}
+
+.column p {
+    display: inline-flex;
+    margin: 20px 0;
+    padding-top: 0px;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: center;
+}
+.list li:hover{
+  height: 20px;
+  width: 20px;
+  background-color:rgb(23, 101, 96);
+  color:white;
+  text-align: center;
+}
+/* footer section */
+.footer{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(164, 203, 201);
+    justify-content: space-between;  
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+.mail{
+    display: inline-flex;
+    padding-left: 20px;
+    height: 30px;
+    width: 30px;
+    gap: 2px;
+    padding-top: 5px;
+}
+.mail img{
+     padding-left: 30px;
+  
+} 
+.mail pre{
+   font-family: 'Times New Roman', Times, serif;
+   margin-top: 5px;
+}
+.para1{
+   margin-top:8px;
+   padding-left: 50px;
+   
+}
+.search{
+    padding-right: 100px; 
+    display: flex;
+    gap: 2px;
+}
+.search input{
+    height: 30px;
+    width: 300px;
+    border: 1px solid white;
+}
+.search button{
+ border: 1px solid white;
+ height:35px ;
+ background-color: black;
+ color: white;
+}
+.information{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.logo-1 {
+    height: 100px;
+    display: block;
+}
+.contact{
+     padding-left: 2px; 
+}
+.icons-f{
+    display: flex;
+}
+.icons-f img{
+    height: 20px;
+    width:20px;
+}
+
+/* Shop Page */
+.Home{
+    width: 100%;
+    height: 70px;
+    background-color:rgb(238, 241, 243);
+}
+.Home p{
+    padding-top:20px ;
+    padding-left:4%;
+}
+.p_1{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+.p_1 span{
+    color: rgb(25, 85, 81);
+}
+/* shop styling */
+.featured-3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 40px;
+}
+.product-1 {
+    height: 470px;
+    width: 320px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    padding:6px;
+}
+.sandal{
+    background-image: url(./assets/img/product-10-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .sandal{
+    background-image: url(./assets/img/product-10-2.jpg);
+    transition: all 2s linear;
+
+}
+.floaralpants{
+    background-image: url(./assets/img/product-11-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .floaralpants{
+    background-image: url(./assets/img/product-11-2.jpg);
+    transition: all 2s linear;
+
+}
+
+.plazo{
+    background-image: url(./assets/img/product-4-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .plazo{
+    background-image: url(./assets/img/product-4-2.jpg);
+    transition: all 2s linear;
+
+}
+.floaralshirt{
+    background-image: url(./assets/img/product-12-1.jpg);
+    height: 290px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid white;
+    background-size: 100% 100%;
+}
+.product-1:hover .floaralshirt{
+    background-image: url(./assets/img/product-12-2.jpg);
+    transition: all 2s linear;
+
+}
+.price p {
+    color: rgb(23, 113, 113);
+}
+
+.price p strike {
+    color: gray;
+    font-size: small;
+}
+
+.cart-img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(230, 228, 221);
+    line-height: 30px;
+    position: relative;
+    left: 270px;
+    bottom: 60px;
+    padding: 10px;
+
+}
+.btn {
+    background-color:rgb(142, 186, 142);
+    color: azure;
+    border: 1px solid white;
+
+    border-radius: 5px;
+}
+
+.list-1{
+    margin-top: 40px ;
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+.list-1 li:hover{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(23, 101, 96);
+    color: white;
+}
+/* myaccount styling */
+.Table{
+    display: flex;
+}
+.table1{
+    margin-left: 45px;
+    margin-top: 20px;
+    
+}
+.table1 tr td{
+    height: 60px;
+    width: 400px;
+    border: 1px solid rgb(193, 196, 198);
+    padding-left:10px ;
+    border-collapse: collapse;
+}
+.dashboard{
+    margin-left: 40px;
+    background-color: rgb(23, 101, 96);
+    color: white;
+    padding-left:10px ;
+}
+.table2{
+    margin-top: 20px;
+    margin-left: 10px;
+} 
+.table2 tr td{
+    height: 60px;
+    width: 900px;
+    border: 1px solid rgb(193, 196, 198);
+    padding-left:10px ;
+} 
+.Hello{
+    background-color:rgb(238, 241, 243);
+}
+/* login stying */
+.Home h4{
+    padding-top:20px ;
+    padding-left:4%;
+}
+.Login{
+    display: flex;
+}
+.login{
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 300px;
+    width: 600px; 
+    border: 1px solid rgb(99, 96, 96);
+    padding-left:20px; 
+
+
+}
+.login input{
+    height: 50px;
+    width: 500px;
+    margin-top: 10px;
+
+}
+.login button{
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(23, 101, 96);
+    border: 1px solid rgb(23, 101, 96);
+    color:white;
+}
+.createaccount{
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 400px;
+    width: 600px; 
+    border: 1px solid rgb(97, 95, 95);
+    padding-left:20px;
+}
+.createaccount input{
+    height: 50px;
+    width: 500px;
+    margin-top: 10px;
+}
+.createaccount button{
+    margin-top: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(23, 101, 96);
+    border: 1px solid rgb(23, 101, 96);
+    color:white;
+}
+/* compare page styling */
+.compare{
+    height: 400px;
+    width:90%;
+    margin-left:50px;
+    margin-top: 20px;
+    border: 1px solid rgb(213, 209, 209); 
+    
+} 
+.compare img{
+    height: 400px;
+    width: 410px;
+    padding:5px;
+}
+.compare td{
+    border: 1px solid rgb(213, 209, 209);
+    padding: 10px;
+}
+.circles td li{
+    display: inline-flex;
+    list-style: none;
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    margin: 2px;
+   
+}
+td{
+    text-align: center;
+}
+#circle1{
+    background-color: orange;
+}
+#circle2{
+    background-color: red;
+}
+
+#circle3{
+    background-color: yellow;
+}
+.compare span{
+    color: teal;
+}
+.addtocart td button{
+    background-color: teal;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius:3px;
+    border:none;
+}
+
